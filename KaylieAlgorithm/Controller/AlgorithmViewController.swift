@@ -8,8 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class AlgorithmViewController: UIViewController {
 
+    @IBOutlet weak var Name: UILabel!
+    
+    @IBOutlet weak var Image: UIImageView!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

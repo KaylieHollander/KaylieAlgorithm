@@ -10,21 +10,24 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Algorithm View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KaylieAlgorithm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AlgorithmViewController" customModule="KaylieAlgorithm" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SO9-wM-Xc0">
-                                <rect key="frame" x="4" y="161" width="366" height="486"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4e4-Gq-GYi">
-                                <rect key="frame" x="28" y="20" width="318" height="60"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2ep-y7-7qJ">
+                                <rect key="frame" x="16" y="244" width="343" height="403"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="1ex-Jn-k6t"/>
+                                    <constraint firstAttribute="height" constant="128" id="3QZ-KC-7OQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4e4-Gq-GYi">
+                                <rect key="frame" x="0.0" y="44" width="375" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="oww-jQ-DOK"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -33,16 +36,19 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="4e4-Gq-GYi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="O14-dX-Pfq"/>
-                            <constraint firstItem="SO9-wM-Xc0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="4" id="OSI-wS-yej"/>
-                            <constraint firstItem="4e4-Gq-GYi" firstAttribute="centerX" secondItem="SO9-wM-Xc0" secondAttribute="centerX" id="Yyh-dL-nWh"/>
-                            <constraint firstItem="SO9-wM-Xc0" firstAttribute="top" secondItem="4e4-Gq-GYi" secondAttribute="bottom" constant="81" id="bGE-cw-bFC"/>
-                            <constraint firstAttribute="bottom" secondItem="SO9-wM-Xc0" secondAttribute="bottom" constant="20" symbolic="YES" id="eks-7x-36f"/>
-                            <constraint firstItem="4e4-Gq-GYi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="jmH-Of-CSN"/>
-                            <constraint firstItem="4e4-Gq-GYi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tol-h9-SQj"/>
+                            <constraint firstItem="4e4-Gq-GYi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9y0-Bh-zvl"/>
+                            <constraint firstItem="4e4-Gq-GYi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Tv6-mu-9sv"/>
+                            <constraint firstItem="4e4-Gq-GYi" firstAttribute="width" secondItem="2ep-y7-7qJ" secondAttribute="width" id="gHp-zA-DYJ"/>
+                            <constraint firstItem="2ep-y7-7qJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="onx-WA-gZw"/>
+                            <constraint firstItem="4e4-Gq-GYi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sAx-cr-aYm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2ep-y7-7qJ" secondAttribute="bottom" constant="20" id="xuy-rK-e6u"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="Image" destination="2ep-y7-7qJ" id="h25-7j-qDO"/>
+                        <outlet property="Name" destination="4e4-Gq-GYi" id="gVO-M6-uFB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
