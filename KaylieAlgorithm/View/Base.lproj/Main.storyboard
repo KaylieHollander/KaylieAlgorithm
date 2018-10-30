@@ -18,21 +18,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2ep-y7-7qJ">
-                                <rect key="frame" x="16" y="244" width="343" height="403"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="swiftSample.2xpng" translatesAutoresizingMaskIntoConstraints="NO" id="2ep-y7-7qJ">
+                                <rect key="frame" x="16" y="560" width="343" height="87"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="3QZ-KC-7OQ"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4e4-Gq-GYi">
-                                <rect key="frame" x="0.0" y="44" width="375" height="149"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4e4-Gq-GYi">
+                                <rect key="frame" x="0.0" y="44" width="375" height="463"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="oww-jQ-DOK"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="Algorithm">
                                         <attributes>
-                                            <font key="NSFont" size="12" name="Georgia"/>
+                                            <font key="NSFont" size="18" name="Georgia"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -61,4 +61,7 @@
             <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="swiftSample.2xpng" width="1248" height="1244"/>
+    </resources>
 </document>
